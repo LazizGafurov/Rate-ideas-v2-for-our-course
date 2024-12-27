@@ -1,0 +1,47 @@
+@use "./styles/overrides";
+
+@use "../node_modules/tailwindcss/base.css";
+@use "../node_modules/tailwindcss/components.css";
+@use "../node_modules/tailwindcss/utilities.css";
+
+// TODO: Fix fonts
+@font-face {
+  font-family: GilroySemibold;
+  src: url("../public/fonts/gilroy-semibold.ttf");
+}
+
+@font-face {
+  font-family: GilroyMedium;
+  src: url("../public/fonts/gilroy-medium.ttf");
+}
+
+html,
+body {
+  height: 100%;
+  font-family: GilroySemibold;
+}
+body {
+  margin: 0;
+}
+
+.gilroy-medium {
+  font-family: GilroyMedium !important;
+}
+
+
+::-webkit-scrollbar {
+  width: 4.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #ffffffaa;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(rgb(221, 217, 217), rgb(97, 94, 97));
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
